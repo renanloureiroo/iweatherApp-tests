@@ -7,9 +7,10 @@
   "transformIgnorePatterns": [
     "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
   ],
-  "modulePathIgnorePatterns": ["__tests__/mocks/*"],
+  "modulePathIgnorePatterns": ["__tests__/*"],
   "setupFilesAfterEnv": ["./jest-setup.ts"],
   "setupFiles": [
-    "./__tests__/mocks/@react-native-async-storage/async-storage.ts"
+    "./__tests__/mocks/@react-native-async-storage/async-storage.ts",
+    "./__tests__/mocks/react-native-safe-area-context/safe-area-context.ts"
   ]
 }
